@@ -1,0 +1,12 @@
+Nome Tabella:
+Users
+
+Id: string
+Name: string
+Surname: string
+Email: string
+Status: stringa
+Role: stringa
+
+Satus dipende da età 
+
