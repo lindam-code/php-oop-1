@@ -8,13 +8,13 @@
       'name' => 'Sandra',
       'surname' => 'Marchegiano',
       'email' => 'sandram@email.it',
-      'eta' => '16'
+      'eta' => 16,
     ],
     [
       'name' => 'Ennio',
       'surname' => 'Baldassari',
       'email' => 'enniob@email.it',
-      'eta' => '35'
+      'eta' => 35,
     ]
   ];
   ?>
@@ -36,13 +36,10 @@
   // Creazione di Employees
   $employee1 = new Employee('Vita','Snella','vitas@email.it','18');
   $employee1->setLivello(18);
-  $employee1->setStatus(18);
-  $employee2 = new Employee('Billo','Ballo','billob@email.it','32');
+  $employee2 = new Employee('Billo','Ballo','billob@email.it','20');
   $employee2->setLivello(20);
-  $employee2->setStatus(20);
   $employee3 = new Employee('Ci','Sei','cis@email.it','33');
   $employee3->setLivello(33);
-  $employee3->setStatus(33);
 
   ?>
   <div>
@@ -54,6 +51,9 @@
         </ul>
   </div>
   <?php
+
+  // Creazione Administrator
+
 
   // Metodo 1 di creazione manuale degli users
   // $user1 = new User('Sandra','Marchegiano','sandram@email.it','member');

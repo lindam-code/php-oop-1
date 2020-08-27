@@ -12,5 +12,15 @@
     {
       return $this->level;
     }
+
+    public function setStatus()
+    {
+      $this->status = 'Employee always can comment!!';
+    }
+
+    public function getStatus()
+    {
+      return $this->status;
+    }
   }
  ?>

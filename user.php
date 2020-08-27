@@ -6,21 +6,23 @@
     public $eta;
     public $status = 'Comments are prohibited!!';
 
-    public function __construct($_name, $_surname,$_email,$eta)
+    public function __construct($_name, $_surname,$_email,$_eta)
     {
       $this->name = $_name;
       $this->surname = $_surname;
       $this->email = $_email;
+      $this->eta = $_eta;
+      $this->setStatus();
     }
 
     public function getGeneralInfo()
     {
-      return $this->name . ' ' . $this->surname . ' Email: ' . $this->email . 'Status: ' . $this->status;
+      return $this->name . ' ' . $this->surname . ' Email: ' . $this->email . ' Status: ' . $this->status;
     }
 
-    public function setStatus($eta)
+    public function setStatus()
     {
-      if($eta > 21) {
+      if($this->eta > 21) {
         $this->status = 'Can comment!!';
       }
     }
