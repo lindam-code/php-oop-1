@@ -4,7 +4,7 @@
     public $surname;
     public $email;
     public $eta;
-    public $status = 'Comments are prohibited!!';
+    protected $status = 'Comments are prohibited!!';
 
     public function __construct($_name, $_surname,$_email,$_eta)
     {
