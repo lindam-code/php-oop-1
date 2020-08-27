@@ -4,7 +4,7 @@
 
     public function setLivello($eta)
     {
-      if ($eta > 22) {
+      if ($eta > 30) {
         $this->level = 'senior';
       }
     }

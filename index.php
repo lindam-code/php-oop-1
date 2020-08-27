@@ -8,11 +8,13 @@
       'name' => 'Sandra',
       'surname' => 'Marchegiano',
       'email' => 'sandram@email.it',
+      'eta' => '16'
     ],
     [
       'name' => 'Ennio',
       'surname' => 'Baldassari',
       'email' => 'enniob@email.it',
+      'eta' => '35'
     ]
   ];
   ?>
@@ -20,7 +22,7 @@
     <div>
     <?php
       foreach ($users as $user) {
-        $utente = new User($user['name'],$user['surname'],$user['email']);
+        $utente = new User($user['name'],$user['surname'],$user['email'],$user['eta']);
         ?>
         <ul>
           <li><?php echo $utente->getGeneralInfo() ?></li>
@@ -32,12 +34,15 @@
   <?php
 
   // Creazione di Employees
-  $employee1 = new Employee('Vita','Snella','vitas@email.it');
+  $employee1 = new Employee('Vita','Snella','vitas@email.it','18');
   $employee1->setLivello(18);
-  $employee2 = new Employee('Billo','Ballo','billob@email.it');
-  $employee2->setLivello(32);
-  $employee3 = new Employee('Ci','Sei','cis@email.it');
+  $employee1->setStatus(18);
+  $employee2 = new Employee('Billo','Ballo','billob@email.it','32');
+  $employee2->setLivello(20);
+  $employee2->setStatus(20);
+  $employee3 = new Employee('Ci','Sei','cis@email.it','33');
   $employee3->setLivello(33);
+  $employee3->setStatus(33);
 
   ?>
   <div>
